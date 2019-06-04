@@ -1,8 +1,9 @@
-<h1>Help</h1>
+<%= provide :title, t("help") %>
+<h1><%= t "help" %></h1>
 <p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="https://www.railstutorial.org/help">Rails Tutorial help page</a>.
-  To get help on this sample app, see the
-  <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
+  <%= t "get_help_on_the_ruby_on_rails_tutorial_at_the" %>
+  <%= link_to t("rails_tut_help"), Settings.url.rails_tut_help %>.
+  <%= t "to_get_help_on_this_sample_app_see_the" %>
+  <%= link_to t("rails_tut"), Settings.url.rails_tut_book %>
   book</a>.
 </p>
