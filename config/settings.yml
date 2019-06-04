@@ -7,3 +7,11 @@ url:
   rails: "http://rubyonrails.org/"
   new_rails: "http://news.railstutorial.org/"
   michael_hartl: "http://www.michaelhartl.com/"
+validates:
+  name_max: 50
+  email_max: 255
+  password_min: 6
+  mail_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+user:
+  avatar_size: 80
+  avatar_url: "https://secure.gravatar.com/avatar/"
