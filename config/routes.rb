@@ -7,4 +7,3 @@ Rails.application.routes.draw do
   get "/contact", to: "static_pages#contact"
   get "/singup",  to: "users#new"
   resources :users
-end
