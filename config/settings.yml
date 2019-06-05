@@ -11,4 +11,7 @@ validates:
   name_max: 50
   email_max: 255
   password_min: 6
-  mail_regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  mail_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+user:
+  avatar_size: 80
+  avatar_url: "https://secure.gravatar.com/avatar/"

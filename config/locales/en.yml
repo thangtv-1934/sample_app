@@ -56,3 +56,6 @@ en:
   michael_hartl: "Michael Hartl"
   sample_app: "sample app"
   by: "by "
+  users:
+    confirm: "Confirmation"
+    create_account: "Create my account"
