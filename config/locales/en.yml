@@ -1,34 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   hello: "Hello world"
   wellcome: "Welcome to the Sample App"
@@ -57,6 +26,9 @@ en:
   michael_hartl: "Michael Hartl"
   sample_app: "sample app"
   by: "by "
+  delete: "Delete"
+  sure: "You sure?"
+  error: "Error"
   users:
     title: "Users"
     confirm: "Confirmation"
@@ -66,3 +38,37 @@ en:
     account: "Account"
     profile: "Profile"
     setting: "Settings"
+    edit_user: "Edit User"
+    save: "Save changes"
+    change: "change"
+    profile_updated: "Profile updated"
+    p_login: "Please log in."
+    all_user: "All users"
+    user_deleted: "User deleted"
+    forgot_password: "(forgot password)"
+    forgot_password_text: "Forgot password"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    followers: "Followers"
+  remember: "Remember me on this computer"
+  check_mail: "Please check your email to activate your account."
+  account_active: "Account activation"
+  account_activated: "Account activated!"
+  invalid_active: "Invalid activation link"
+  activate: "Activate"
+  submit: "Submit"
+  email_not_found: "Email address not found"
+  email_send_reset_pass_success: "Email sent with password reset instructions"
+  password_reset: "Password reset"
+  update_password: "Update password"
+  can_not_empty: "can't be empty"
+  password_reset_success: "Password has been reset."
+  password_expired: "Password reset has expired."
+  view_my_profile: "view my profile"
+  post: "Post"
+  micropost:
+    created: "Micropost created!"
+    compose_new_micropost: "Compose new micropost..."
+    img_should_be_less_than_5MB: "should be less than 5MB"
+    validate_file: "File should be less than 5MB"
