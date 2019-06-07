@@ -18,3 +18,5 @@ user:
   mail_url: "http://gravatar.com/emails"
 email:
   mail_send: "thangtr97@gmail.com"
+expire:
+  password: 2
