@@ -5,7 +5,8 @@ class User < ApplicationRecord
   validates :name, presence: true, length: {maximum: Settings.validates.name_max}
   validates :email, presence: true, length: {maximum: Settings.validates.email_max},
     format: {with: Settings.validates.mail_regex}, uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: Settings.validates.password_min}
+  validates :password, presence: true, length: {minimum: Settings.validates.password_min}, allow_nil: true
+
   has_secure_password
 
   class << self
@@ -32,5 +33,9 @@ class User < ApplicationRecord
 
   def forget
     update remember_digest: nil
+  end
+
+  def current_user? user
+    self == user
   end
 end

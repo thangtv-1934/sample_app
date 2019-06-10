@@ -15,3 +15,5 @@ validates:
 user:
   avatar_size: 80
   avatar_url: "https://secure.gravatar.com/avatar/"
+  mail_url: "http://gravatar.com/emails"
+  paginate_per_page: 10
