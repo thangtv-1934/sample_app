@@ -77,3 +77,8 @@ en:
     all_user: "All users"
     user_deleted: "User deleted"
   remember: "Remember me on this computer"
+  check_mail: "Please check your email to activate your account."
+  account_active: "Account activation"
+  account_activated: "Account activated!"
+  invalid_active: "Invalid activation link"
+  activate: "Activate"

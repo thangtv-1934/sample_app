@@ -36,3 +36,4 @@ config/environments/*.local.yml
 
 /test/*
 .idea/*
+/config/initializers/app_env_vars.rb
