@@ -73,4 +73,6 @@ Rails.application.configure do
     :password => ENV["MAILER_PASSWORD"],
     :authentication => "plain"
   }
+
+  config.middleware.use I18n::JS::Middleware
 end
