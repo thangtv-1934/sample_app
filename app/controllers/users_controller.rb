@@ -50,14 +50,14 @@ class UsersController < ApplicationController
   def following
     @title = t "users.following"
     @user  = User.find_by id: params[:id]
-    @users = @user.following.paginate(page: params[:page])
+    @users = @user.following.page params[:page]
     render "show_follow"
   end
 
   def followers
     @title = t "users.followers"
     @user  = User.find_by id: params[:id]
-    @users = @user.followers.paginate(page: params[:page])
+    @users = @user.followers.page params[:page]
     render "show_follow"
   end
 
@@ -75,7 +75,7 @@ class UsersController < ApplicationController
 
   def correct_user
     @user = User.find_by id: params[:id]
-    redirect_to root_url unless current_user? @user
+    redirect_to root_url unless current_user.current_user? @user
   end
 
   def admin_user

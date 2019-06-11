@@ -82,6 +82,10 @@ class User < ApplicationRecord
     following.include? other_user
   end
 
+  def current_user? user
+    self == user
+  end
+
   private
 
   def downcase_email
@@ -108,9 +112,5 @@ class User < ApplicationRecord
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
-  end
-
-  def current_user? user
-    self == user
   end
 end
